@@ -1,0 +1,15 @@
+{
+  "name": "hiserv",
+  "productName": "Hiserv",
+  "description": "Hiserv minecraft server crafter",
+  "keywords": [],
+  "main": "./main.js",
+  "version": "1.0.0",
+  "author": "H. Mert Gökhan",
+  "scripts": {
+    "start": "electron ."
+  },
+  "devDependencies": {
+    "electron": "^20.1.0"
+  }
+}

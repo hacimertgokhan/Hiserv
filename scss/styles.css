@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css?family=Oleo+Script+Swash+Caps");
+:root {
+  --font: #F5EFE7;
+  --other: #D8C4B6;
+  --secondary: #4F709C;
+  --primary: #213555;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  background-color: var(--primary);
+  color: var(--font);
+  font-family: "Oleo Script Swash Caps";
+}
+
+.hello {
+  margin: 100px auto;
+  display: grid;
+  justify-items: center;
+}
+.hello h1 {
+  font-size: 90px;
+}
+.hello .server {
+  width: 500px;
+  height: 350px;
+  margin: 25px auto;
+  border-radius: 50px;
+}
+.hello .server label {
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  font-size: 30px;
+  text-align: center;
+  margin: 50px auto;
+  justify-content: center;
+  display: flex;
+}
+.hello .server a {
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  font-size: 30px;
+  padding: 15px;
+  border-radius: 10px;
+  margin: 20px auto;
+  justify-content: center;
+  transition: 0.3s;
+  display: flex;
+  text-decoration: none;
+  color: var(--font);
+  background-color: var(--secondary);
+}
+.hello .server a:hover {
+  box-shadow: 0px 0px 50px 2px var(--font);
+  transition: 0.3s;
+}
+.hello .server ul {
+  list-style-type: none;
+  justify-content: space-evenly;
+  display: flex;
+  margin: 70px auto;
+}
+.hello .server ul a {
+  padding: 10px;
+  color: var(--font);
+  border-radius: 100px;
+}
+.hello .server ul a:hover {
+  box-shadow: 0px 0px 100px 1px var(--font);
+  background-color: var(--primary);
+  color: var(--font);
+}/*# sourceMappingURL=styles.css.map */

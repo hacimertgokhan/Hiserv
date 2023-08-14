@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Security-Policy" name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet/less" type="text/css" href="../scss/options/options.css" />
+    <script src="https://cdn.jsdelivr.net/npm/less@4.1.1"></script> 
+    <script src="https://kit.fontawesome.com/55460c171b.js" crossorigin="anonymous"></script>
+    <title>Options - Hiserv</title>
+  </head>
+
+  <!-- Hiserv - Body - Start-->
+
+  <body>
+
+
+    <div class="options">
+
+        <h1>Options</h1>
+        <div class="box">
+            <ul>
+                <li>
+                    <label for="forks">Server Fork: </label>
+                    <select name="forks" id="$forks">
+                        <option value="Vanilla">Vanilla</option>
+                        <option value="Bukkit">Bukkit</option>
+                        <option value="Spigot">Spigot</option>
+                        <option value="Paper">Paper</option>
+                        <option value="Purpur">Purpur</option>
+                    </select>
+                </li>
+                <li>
+                    <label for="version">Server Version: </label>
+                    <input id="$verr" type="number">
+                    <span class="errorboxes" id="$verr_errorbox"><i class="fa-solid fa-triangle-exclamation"></i></span>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <label for="onlinemode">Online Mode: </label>
+                    <span id="$checkbox" class="customcheckbox"><i class="fa-solid fa-xmark fa-xs"></i></span>
+                </li>
+                <li>
+                    <label for="optimization">Optimization:</label>
+                    <select name="optimization" id="$optimization">
+                        <option value="vhigh">Very High</option>
+                        <option value="high">High</option>
+                        <option value="normal">Normal</option>
+                        <option value="none">None</option>
+                    </select>
+                </li>
+            </ul>
+            <div class="create">
+                <button>Craft Server</button>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="../js/options/clickEvents.js"></script>
+    <script src="../js/options/changeEvents.js"></script>
+  </body>
+
+  <!-- Hiserv - Body - End-->
+
+
+</html>

@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css?family=Oleo+Script+Swash+Caps');
+$yi-font: "Microsoft Yi Baiti";
+:root {
+    --font: #F5EFE7;
+    --other: #D8C4B6;
+    --secondary: #4F709C;
+    --primary: #213555;
+} 
+
+$colors: (
+    'font': var(--font),
+    'other': var(--other),
+    'secondary': var(--secondary),
+    'primary': var(--primary),
+);
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: var(--primary);
+    color: var(--font);
+    font-family: "Oleo Script Swash Caps";
+}
+
+.options {
+    margin: 25px auto;
+    display: grid;
+    justify-items: center;
+    h1 {
+        font-size: 70px;
+        margin-bottom: 25px;
+    }
+    .box {
+        width: 450px;
+        font-family: $yi-font;
+        height: 600px;
+        font-size: 24px;
+        background-color: var(--secondary);
+        border-radius: 10px 50px 10px 50px;
+        .create {
+            position: absolute;
+            bottom: 0%;
+            width: 450px;
+            margin: 150px auto;
+            text-align: center;
+            button {
+                width: 120px;
+                padding: 5px;
+                border-radius: 50px;
+                font-family: $yi-font;
+                outline: none;
+                transition: .3s;
+                cursor: pointer;
+                font-size: 20px;
+                border: none;
+            }
+            button:hover {
+                transform: scale(1.09);
+                background-color: var(--primary);
+                color: var(--font);
+                transition: .3s;
+            }
+        }
+        ul {
+            list-style-type: none;
+            display: flex;
+            justify-content: space-evenly;
+            margin: 50px auto;
+            input::-webkit-outer-spin-button,
+            input::-webkit-inner-spin-button {
+                   -webkit-appearance: none;
+                    margin: 0;
+            }
+            input[type=number] {
+                width: 60px;
+                border-radius: 50px;
+                background-color: var(--primary);
+                color: var(--font);
+                padding: 5px;
+                border: none;
+                outline: none;
+                -moz-appearance: textfield;
+            }
+            select {
+                border-radius: 50px;
+                background-color: var(--primary);
+                color: var(--font);
+                padding: 5px;
+                border: none;
+                outline: none;
+            }
+            li {
+                margin-left: 15px;
+                margin-right: 15px;
+                .errorboxes {
+                    color: tomato;
+                    font-family: $yi-font;
+                    font-size: 20px;
+                    display: block;
+                    margin-left: 20px;
+                    display: none;
+                }
+                .customcheckbox {
+                    width: 16px;
+                    height: 16px;
+                    cursor: pointer;
+                    padding: 15px;
+                    border-radius: 100px;
+                    position: absolute;
+                    margin: 0 8px auto;
+                    background-color: var(--primary);
+                    display: inline-flex;
+                    i {
+                        position: absolute;
+                        margin-left: -7px;
+                    }
+                }
+            }
+        }
+    }
+}
