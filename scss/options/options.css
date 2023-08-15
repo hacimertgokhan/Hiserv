@@ -18,6 +18,14 @@ html {
   font-family: "Oleo Script Swash Caps";
 }
 
+@keyframes hsborder {
+  50% {
+    text-shadow: 0px 0px 20px #F5EFE7;
+  }
+  100% {
+    text-shadow: 0px 0px 10px #F5EFE7;
+  }
+}
 .options {
   margin: 25px auto;
   display: grid;
@@ -26,20 +34,41 @@ html {
 .options h1 {
   font-size: 70px;
   margin-bottom: 25px;
+  /*
+      animation-name: hsborder;
+      animation-duration: 1s;
+      animation-iteration-count: infinite;
+      animation-direction: alternate-reverse;
+      animation-timing-function: ease;
+  */
+}
+.options .plugins {
+  width: 450px;
+  height: 200px;
+  font-family: "Microsoft Yi Baiti";
+  font-size: 20px;
+  background-color: var(--secondary);
+  border-radius: 10px 50px 10px 50px;
+  margin-top: 50px;
+}
+.options .plugins ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-evenly;
 }
 .options .box {
   width: 450px;
   font-family: "Microsoft Yi Baiti";
-  height: 600px;
+  height: 300px;
   font-size: 24px;
   background-color: var(--secondary);
   border-radius: 10px 50px 10px 50px;
 }
 .options .box .create {
-  position: absolute;
+  position: relative;
   bottom: 0%;
   width: 450px;
-  margin: 150px auto;
+  margin: auto;
   text-align: center;
 }
 .options .box .create button {
@@ -63,7 +92,7 @@ html {
   list-style-type: none;
   display: flex;
   justify-content: space-evenly;
-  margin: 50px auto;
+  margin: 60px auto;
 }
 .options .box ul input::-webkit-outer-spin-button,
 .options .box ul input::-webkit-inner-spin-button {

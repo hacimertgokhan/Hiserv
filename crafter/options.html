@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <meta http-equiv="Content-Security-Policy" name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" name="viewport">
     <link rel="stylesheet/less" type="text/css" href="../scss/options/options.css" />
     <script src="https://cdn.jsdelivr.net/npm/less@4.1.1"></script> 
     <script src="https://kit.fontawesome.com/55460c171b.js" crossorigin="anonymous"></script>
@@ -51,8 +51,23 @@
                 </li>
             </ul>
             <div class="create">
+                <button id="directory">Directory</button>
                 <button>Craft Server</button>
             </div>
+        </div>
+        <div class="plugins">
+            <ul>
+                <li>
+                    <label for="vault">Vault: </label>
+                    <button onclick="plugins('vault')"></button>
+                </li>
+                <li>
+                    <label for="onlinemode">Online Mode: </label>
+                </li>
+                <li>
+                    <label for="onlinemode">Online Mode: </label>
+                </li>
+            </ul>
         </div>
 
     </div>
